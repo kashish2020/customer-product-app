@@ -29,7 +29,7 @@ public class WishlistApplication {
 		return new CorsFilter(src);
 	}
 
-	@Bean
+	@LoadBalance
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
